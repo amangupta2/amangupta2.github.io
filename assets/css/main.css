@@ -98,7 +98,7 @@ input, select, textarea {
 		}
 
 	body, input, select, textarea {
-		color: #a2a2a2;
+		color: #575757;/*#a2a2a2;*/
 		font-family: "Source Sans Pro", Helvetica, sans-serif;
 		font-size: 16pt;
 		font-weight: 400;
@@ -1895,7 +1895,7 @@ input, select, textarea {
 		input[type="checkbox"] + label,
 		input[type="radio"] + label {
 			text-decoration: none;
-			color: #a2a2a2;
+			color: #575757; /*#a2a2a2;*/
 			cursor: pointer;
 			display: inline-block;
 			font-size: 1em;
@@ -2640,7 +2640,7 @@ input, select, textarea {
 
 		#header .image.avatar {
 			margin: 0 0 1em 0;
-			width: 6.25em;
+			width: 8.25em; /* Aman: increased from 6.25 */
 		}
 
 /* Footer */
@@ -2967,6 +2967,7 @@ input, select, textarea {
 		display: none !important;
 	}
 
+	/* Aman: change this if background image gives trouble going forward */
 	body.is-touch #header {
 		background-attachment: scroll;
 		background-size: auto, cover;
