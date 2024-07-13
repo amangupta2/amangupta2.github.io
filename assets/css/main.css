@@ -7,6 +7,8 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
+$randomNumber: random(5); /* Aman: added random number generation */
+
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
 pre, a, abbr, acronym, address, big, cite,
@@ -99,8 +101,8 @@ input, select, textarea {
 
 	body, input, select, textarea {
 		color: #575757;/*#a2a2a2;*/
-		font-family: "Source Sans Pro", Helvetica, sans-serif;
-		font-size: 16pt;
+		font-family: "Times New Roman", "Open Sans", "Source Sans Pro", Helvetica, sans-serif; /* Aman: added Times New Roman and Open Sans" */
+		font-size: 14pt; /* Aman: changed from default 16 to 14 */
 		font-weight: 400;
 		line-height: 1.75em;
 	}
@@ -2600,7 +2602,7 @@ input, select, textarea {
 		color: rgba(255, 255, 255, 0.5);
 		height: 100%;
 		left: 0;
-		padding: 8em 4em;
+		padding: 6em 3em; /* Aman: changed from default 8em 4em --> 6em 3em */
 		position: fixed;
 		text-align: right;
 		top: 0;
@@ -2640,7 +2642,7 @@ input, select, textarea {
 
 		#header .image.avatar {
 			margin: 0 0 1em 0;
-			width: 8.25em; /* Aman: increased from 6.25 */
+			width: 8.25em; /* Aman: photo size increased from 6.25em */
 		}
 
 /* Footer */
@@ -2683,7 +2685,7 @@ input, select, textarea {
 
 	#main {
 		margin-left: 30%; /* Aman: This should be changed when changing header width size (along with same % in L2688 as well) */
-		max-width: 60em;  /* Aman: This controls the width of the main text paragraph */
+		max-width: 65em;  /* Aman: This controls the width of the main text paragraph */
 		padding: 8em 4em 4em 4em;
 		width: calc(100% - 30%); /* Aman: Adjust this width when changing header with in L2607 as well. Also adjust margin-left 3 lines up in L2685 */
 	}

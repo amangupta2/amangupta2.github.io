@@ -14,6 +14,11 @@
 		<meta name="description" content="Aman Gupta's webspace. Aman is a postdoctoral scholar studying climate change and climate modeling at Stanford University. Prior, he was a postdoctoral scholar at LMU Munich, where he investigated atmospheric gravity waves. He received his PhD from the Courant Institude, NYU, where he explored stratospheric transport">
 		<meta name="keywords" content="Aman Gupta,NYU,Courant,CIMS,LMU Munich,Stanford,Climate Change,Climate Modeling,Atmospheric Dynamics,Machine Learning,Stratospheric Transport,Gravity Waves,Age of Air">
 	</head>
+
+	<script>
+		document.getElementById("header").style.backgroundImage = "url('assets/css/images/overlay.png'), url('images/bg1.jpg')";
+	</script>
+
 	<body class="is-preload">
 
 		<!-- Header -->
@@ -25,18 +30,28 @@
 					<br />
 					<a href="#two"><h4>Research</h4></a>
 					<a href="#three"><h4>Latest News</h4></a>
-					<a href="https://mesreflexions2.wordpress.com/"><h4>Blog</h4></a>
+					<a href="https://mesreflexions2.wordpress.com/" target="_blank"><h4>Blog</h4></a>
 				</div>
 			</header>
+
+			<script>
+			random = Math.floor(Math.random()*10).toString();
+			pre = "url('assets/css/images/overlays.png'), url('images/bg"
+			url = pre.concat(random,".jpg")
+			document.getElementById("header").style.backgroundImage = url;
+			</script>
+
 
 		<!-- Main -->
 			<div id="main">
 
 				<!-- One -->
 					<section id="one">
+						<!--
 						<header class="major">
-							<!--<h2>Welcome to my webspace</h2>-->
+							<h2>Welcome to my webspace</h2>
 						</header>
+						-->
 							<p>I study the large-scale dynamics of the atmosphere, how it evolves under climate change, and how it can be accurately represented in climate models to reduce climate model uncertainty.<br /><br />
 							
 							I am a postdoctoral researcher at <a href="https://sustainability.stanford.edu/" target="_blank">Stanford's Doerr School of Sustainability</a> where I work with <a href="https://eddy.stanford.edu/people" target="_blank">Aditi Sheshadri</a> at the intersection of atmospheric dynamics, climate modeling, and machine learning. I am part of the <a href="https://datawaveproject.github.io/" target="_blank">DataWave program</a>, an international consortium aimed at improving our understanding and model representation of atmospheric gravity waves.<br /><br />
@@ -110,11 +125,11 @@
 								<p></p>
 							</article>
 						</div>
-						<!--
+						
 						<ul class="actions">
-							<li><a href="https://mesreflexions2.wordpress.com/" class="button">Visit the blog to read more</a></li>
+							<li><a href="https://mesreflexions2.wordpress.com/" class="button" target="_blank">Read More</a></li>
 						</ul>
-						-->
+						
 					</section>
 
 				<!-- Three -->
