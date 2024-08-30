@@ -53,13 +53,13 @@
 							<h2>Welcome to my webspace</h2>
 						</header>
 						-->
-							<p>I study the large-scale dynamics of the atmosphere, how it evolves under climate change, and how it can be accurately represented in climate models to reduce climate model uncertainty.<br /><br />
+							<p>I study the large-scale dynamics of the atmosphere, how it evolves under climate change, and its evolution in a changing climate.<br /><br />
 							
 							I am a postdoctoral researcher at <a href="https://sustainability.stanford.edu/" target="_blank">Stanford's Doerr School of Sustainability</a> where I work with <a href="https://eddy.stanford.edu/people" target="_blank">Aditi Sheshadri</a> at the intersection of atmospheric dynamics, climate modeling, and machine learning. I am part of the <a href="https://datawaveproject.github.io/" target="_blank">DataWave program</a>, an international consortium aimed at improving our understanding and model representation of atmospheric gravity waves.<br /><br />
 
-							Prior to this, I worked at the <a href="https://www.en.meteo.physik.uni-muenchen.de/" target="_blank">Ludwig-Maximilian University of Munich (LMU)</a> with <a href="https://www.meteo.physik.uni-muenchen.de/~Thomas.Birner" target="_blank">Thomas Birner</a>, in collaboration with the German Aerospace Center (DLR), where I investigated the <b>role of gravity waves in shaping the atmospheric circulation</b>, a.k.a., the Brewer-Dobson circulation.<br /><br />
+							Prior to this, I worked at the <a href="https://www.en.meteo.physik.uni-muenchen.de/" target="_blank">Ludwig-Maximilian University of Munich (LMU)</a> with <a href="https://www.meteo.physik.uni-muenchen.de/~Thomas.Birner" target="_blank">Thomas Birner</a>, in collaboration with the German Aerospace Center (DLR), where I investigated gravity wave forcing in the midlatitude stratosphere.<br /><br />
 
-							I received my Ph.D. from the<a href="http://cims.nyu.edu/" target="_blank"> Courant Institute of Mathematical Sciences, New York University</a>, where  I assessed <b>stratosphere-troposphere coupling</b> &#38; <b>tracer transport</b> in idealized climate models. I was advised by <a href="https://edwinpgerber.github.io/" target="_blank">Edwin Gerber</a>. This work was motivated by the prevailing uncertainties in the projections of the Antarctic ozone hole recovery. <br /><br />
+							I received my Ph.D. from the<a href="http://cims.nyu.edu/" target="_blank"> Courant Institute of Mathematical Sciences, New York University</a>, where, motivated by uncertainties in the Antarctic ozone hole recovery projections, I assessed <b>stratosphere-troposphere coupling</b> &#38; <b>tracer transport</b> in idealized climate models. I was advised by <a href="https://edwinpgerber.github.io/" target="_blank">Edwin Gerber</a>.
 					
 							<b>Email:</b> I can be reached at : ag4680 |at| stanford |dot| edu, or ag4680 [at] nyu [dot] edu</p>
 
@@ -67,7 +67,7 @@
 										
 							<p style="text-align:left"><b style='color : #2b396b'>
 							<img src="images/gravity_waves_animation.gif" align="center" alt="Stratospheric gravity waves over the Andes as seen in ERA5" width="48%" /><img src="images/IFS1km_August2019_animation.gif" align="center" alt="Stratospheric gravity waves over the Andes as seen in the 1 km IFS" width="50%" /><br />
-							Figure:</b> Resolution matters! Mountain waves excited over the Andes in August 2019 at 40 km height (stratosphere) as seen in (left) ERA5 reanalysis and (right) free running ECMWF IFS 1.4 km model integrated on Oak Ridge's Summit supercomputer. <a href="https://svs.gsfc.nasa.gov/14445/" target="_blank">Click here for more, fascinating, satellite imagery of atmospheric gravity waves.</a></p>
+							Figure:</b> Resolution matters! Mountain waves excited over the Andes in August 2019 at 40 km height (stratosphere) as seen in (left) ERA5 reanalysis and (right) free running ECMWF IFS 1.4 km model integrated on Oak Ridge's Summit supercomputer. Improved grid resolution unravels rich mesoscale atmospheric variability which can be crucial in holistically understanding the dynamical interactions in the atmosphere. <a href="https://svs.gsfc.nasa.gov/14445/" target="_blank">Click here for more, fascinating, satellite imagery of atmospheric gravity waves.</a></p>
 
 						<!-- Aman: Commenting this out. Uncomment if needed -->
 						<!--
@@ -86,18 +86,20 @@
 						<div class="row">
 							<article class="col-6 col-12-xsmall work-item">
 								<a href="images/scidata_fluxes.jpg" class="image fit thumb"><img src="images/scidata_fluxes.jpg" alt="" /></a>
-								<h3>A computationally tractable way to compute small-scale momentum fluxes</h3> 
-								<p>using Helmholtz decomposition from a kilometer-scale global climate model output using Python Spherical Harmonic Transform (PySpharm)</p>
-								<p><a href="https://doi.org/10.1038/s41597-024-03699-x" target="_blank">[paper]</a><a href="https://osf.io/gx32s/" target="_blank">[dataset]</a></p>
+								<h3>A computationally tractable method to compute small-scale momentum fluxes using Helmholtz decomposition.</h3> 
+								<p>Using existing Python spherical harmonics packages out-of-the-box one can compute small-scale momentum fluxes from a kilometer-scale global climate model, using Helmhotlz, in around 600 calendar days (on a typical supercomputer with limited node allocation). We optimized the workflow and reduced it to just 15! The fluxes are now publicly available for anyone to use.</p>
+								<p><a href="https://doi.org/10.1038/s41597-024-03699-x" target="_blank">[paper]</a> <a href="https://osf.io/gx32s/" target="_blank">[dataset]</a></p>
 							</article>
 							<article class="col-6 col-12-xsmall work-item">
 								<a href="images/ml_era5_unet.jpg" class="image fit thumb"><img src="images/icml_schematic.jpg" alt="" /></a>
-								<h3>Machine learning representation of mesoscale gravity waves</h3>
+								<h3>Our ICML'24 paper on machine learning representation of mesoscale gravity waves.</h3>
+								<p>Large AI models are demonstrably good at simulating the large-scale atmospheric evolution but struggle with small-scales. In this paper, we show how deep learning models can be effectively used to generate flux predictors for small-scale processes using a hierarchy of modeling architectures: from single-column ANNs to regionally nonlocal ANNs to global Attention U-Net CNNs. The proof-of-concept indicates that data-driven parameterization can be effectively used to represent mesoscale dynamical processes in climate models.</p>
 								<p><a href="https://arxiv.org/abs/2406.14775" target="_blank">[paper]</a> <a href="https://mesreflexions2.wordpress.com/2024/07/13/machine-learning-representation-of-atmospheric-gravity-waves/" target="blank">[blog]</a></p>
 							</article>
 							<article class="col-6 col-12-xsmall work-item">
 								<a href="images/UW_NH.gif" class="image fit thumb"><img src="images/UW_NH.gif" alt="" /></a>
-								<h3>Does lateral propagation of gravity waves matter for midltitude stratospheric circulation? Yes, here's a quantitative evaluation.</h3>
+								<h3>Does horizontal propagation of gravity waves matter for midltitude stratospheric circulation? Yes, here's a quantitative evaluation.</h3>
+								<p>The reason for horizontal propagation of mesoscale atmospheric waves is well-known, but its true impact on long timescales has not been well-quantified. This study quantifies the contribution of horizontal propagation (due to wave refraction, Doppler shifting etc.) on the midlatitude stratospheric circulation.</p>
 								<p><a href="https://doi.org/10.1029/2024GL108541" target="_blank">[paper]</a> <a href="talks/latprop_seminar_dlr_may2024.pdf" target="_blank">[slides]</a></p>
 							</article>
 						</div>
@@ -106,12 +108,13 @@
 						<div class="row">
 							<article class="col-6 col-12-xsmall work-item">
 								<a href="images/lidar_era5_ifs.jpg" class="image fit thumb"><img src="images/lidar_era5_ifs.jpg" alt="" /></a>
-								<h3>Estimating gravity wave momentum fluxes</h3>
-								<p>by bringing together LIDAR observations, renanalyis, 1 km global models, and coarse climate models <a href="https://doi.org/10.1175/JAS-D-23-0095.1" target="_blank">[paper]</a> <a href="talks/gwflux_sparcGA_oct2022_poster.pdf" target="_blank">[poster]</a></p>
+								<h3>Estimating gravity wave momentum fluxes in the Southern Hemisphere</h3>
+								<p>by blending LIDAR observations, renanalyis, 1 km global models, and coarse climate models <a href="https://doi.org/10.1175/JAS-D-23-0095.1" target="_blank">[paper]</a> <a href="talks/gwflux_sparcGA_oct2022_poster.pdf" target="_blank">[poster]</a></p>
 							</article>
 							<article class="col-6 col-12-xsmall work-item">
 								<a href="images/model_hierarchy.jpg" class="image fit thumb"><img src="images/model_hierarchy.jpg" alt="" /></a>
 								<h3>Where does ML fit in the existing climate model hierarchy?</h3>
+								<p> The last decade has seen a meteoric rise in the application of machine learning principles in climate science. This paper reviews how ML/AI has transformed multiple aspects of climate modeling, and discusses future avenues for climate model development to encompass climate risk evaluation. We reason why ML adds an independent dimension to the existing climate model hierarchy.</p>
 								<p><a href="https://doi.org/10.1029/2023MS003715" target="_blank">[paper]</a></p>
 							</article>
 						</div>
