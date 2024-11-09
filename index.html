@@ -28,7 +28,7 @@
 					<h1><strong>Aman Gupta</strong><br /></h1>
 					Atmospheric Dynamics, Climate Science, Applied Mathematics<br />
 					<br />
-					<a href="#two"><h4>Research</h4></a>
+					<a href="#two"><h4>CV & Research</h4></a>
 					<a href="#three"><h4>Latest News</h4></a>
 					<!--<a href="#four"><h4>Links</h4></a>-->
 					<a href="https://mesreflexions2.wordpress.com/" target="_blank"><h4>Blog</h4></a>
@@ -57,7 +57,7 @@
 							
 							I am a postdoctoral researcher at <a href="https://sustainability.stanford.edu/" target="_blank">Stanford University</a> and I focus on using modern advances in machine learning to improve the representation of atmospheric-climate variability in global climate models. I work with <a href="https://eddy.stanford.edu/people" target="_blank">Aditi Sheshadri</a>. <!--and am part of the <a href="https://datawaveproject.github.io/" target="_blank">DataWave program</a> which is an international consortium aimed at improving our understanding and model representation of atmospheric gravity waves.--><br /><br />
 
-							Prior to this, I worked at the <a href="https://www.en.meteo.physik.uni-muenchen.de/" target="_blank">Ludwig-Maximilian University of Munich (LMU)</a> where I investigated gravity wave forcing in the midlatitude stratosphere, with <a href="https://www.meteo.physik.uni-muenchen.de/~Thomas.Birner" target="_blank">Thomas Birner</a> in collaboration with the German Aerospace Center (DLR), .<br /><br />
+							Prior to this, I worked at the <a href="https://www.en.meteo.physik.uni-muenchen.de/" target="_blank">Ludwig-Maximilian University of Munich (LMU)</a> where I investigated gravity wave forcing in the midlatitude stratosphere, with <a href="https://www.meteo.physik.uni-muenchen.de/~Thomas.Birner" target="_blank">Thomas Birner</a> in collaboration with the German Aerospace Center (DLR).<br /><br />
 
 							I received my Ph.D. from the<a href="http://cims.nyu.edu/" target="_blank"> Courant Institute of Mathematical Sciences, New York University</a>, where, motivated by uncertainties in the Antarctic ozone hole recovery projections, I assessed <b>stratosphere-troposphere coupling</b> &#38; <b>tracer transport</b> in idealized climate models. I was advised by <a href="https://edwinpgerber.github.io/" target="_blank">Edwin P. Gerber</a>.<br/><br />
 					
@@ -66,7 +66,7 @@
 							
 							<p style="text-align:left"><b style='color : #2b396b'>
 							<center><img src="images/flux_prediction_prithvi_finetuning.gif" align="center" alt="Stratospheric gravity waves over the Andes as seen in ERA5" width="80%" /></center><br />
-							Figure: True vs. predicted gravity wave momentum fluxes around Drake Passage during late July 2015 using a global AI flux predictor. We developed a data-driven predictor of atmospheric GW fluxes by finetuning Prithvi WxC - an AI foundation model for weather and climate. Climate models typically fail to resolve atmospheric variability at scales shorter than ~a hundred kilometers. ML can help bridge this prevailing gray-zone gap by learning the "missing physics" from high-resolution models and then representing it in coarser-climate models. Our ML prediction skillfully captures the lateral propagation of GW packets over the Southern Ocean. <a target="_blank" href="https://www.earthdata.nasa.gov/learn/blog/nasa-ibm-weather-climate-foundation-model">Read more about Prithvi WxC here</a>.
+							Figure: True vs. predicted gravity wave momentum fluxes around Drake Passage during late July 2015 using a global AI flux predictor we developed by finetuning Prithvi WxC - a large AI foundation model for weather and climate. Climate models typically fail to resolve atmospheric variability at scales shorter than ~a hundred kilometers. ML can help bridge this prevailing gray-zone gap by learning the "missing physics" from high-resolution models (in this case ERA5 reanalysis) and then representing it in coarser-climate models. Our ML predictor skillfully captures the lateral propagation of GW packets over the Southern Ocean, which can be identified as flux blobs moving in the zonal direction. Foundation models are highly versatile and can be used to accomplish a range of weather and climate sub-tasks. <a target="_blank" href="https://www.earthdata.nasa.gov/learn/blog/nasa-ibm-weather-climate-foundation-model">Read more about Prithvi WxC here</a>.
 							</p><br /><br />
 										
 							
@@ -89,6 +89,7 @@
 				<!-- Two -->
 					<section id="two">
 						<h2>Research</h2>
+						<!---amangupta2 google drive: https://shorturl.at/9d3Jl--->
 						<p style="font-size=50pt">Please refer to <a href="https://goo.gl/cHk1Qi" target="_blank"><b>my CV</b></a> and my <a href="https://scholar.google.com/citations?user=fk-F8bsAAAAJ&hl=en" target="_blank"><b>Google Scholar profile</b></a> for details. Please contact me for access to any of my publications behind a paywall.
 
 						<h2>2024</h2>
@@ -175,10 +176,16 @@
 					<section id="three">
 						<h2>News &amp; Miscellaneous Links</h2>
 							<ol>
-								<li> <b>Prithvi-Weather-Climate:</b> the efforts to build the first multi-modal open foundation model, jointly with NASA, IBM, ORNL, and CSU, over the past several months, have shaped up well. Glad to be a part of this amazing team.<a target="_blank" href="https://www.earthdata.nasa.gov/learn/blog/nasa-ibm-weather-climate-foundation-model"> <b>Click here to learn more about Prithvi-WxC, and what makes it special.</b></a></li>
+								<li> 
+									(September 2024) Excited to share the release of NASA and IBM's <a href="https://huggingface.co/Prithvi-WxC" target="_blank">Prithvi WxC</a> - an AI foundation model for weather and climate application trained on NASA MERRA2 - is now available on Hugging Face <a href="https://arxiv.org/abs/2409.13598" target="_blank">[paper]</a> <a href="https://science.nasa.gov/open-science/ai-model-weather-climate/" target="_blank">[blog1]</a> <a href="https://research.ibm.com/" target="_blank">[blog2]</a> <a href="https://ca.finance.yahoo.com/video/hugging-faces-partnership-ibm-nasa-152026333.html" target="_blank">[media]</a>. We leveraged it to develop a data-driven climate model parameterization for atmospheric gravity waves. Interestingly, not only was training the finetuned model cheaper, but using the encoder-decoder from Prithvi made the model more accurate and more generalizable, leading us to believe that large AI models can be effectively used to improve process representation (precipitation, clouds, radiation, etc.) in global climate models.
+								</li><br />
+
+								<li>
+									(May 2024) <b>Prithvi-Weather-Climate:</b> the efforts to build the first multi-modal open foundation model, jointly with NASA, IBM, ORNL, and CSU, over the past several months, have shaped up well. Glad to be a part of this amazing team.<a target="_blank" href="https://www.earthdata.nasa.gov/learn/blog/nasa-ibm-weather-climate-foundation-model"> <b>Click here to learn more about Prithvi-WxC, and what makes it special.</b></a></li>
 								<br />
 
-								<li>In June 2023, I delivered a set of four lectures on <b>"Machine Learning Methods in Atmosphere, Ocean, and Climate Science"</b> at an <a href="https://www.icts.res.in/discussion-meeting/COAPS" target="_blank">atmosphere, ocean, and climate science workshop</a> organised at the <a href="https://www.icts.res.in/" target="_blank">International Centre for Theoretical Science, TIFR, Bengaluru</a>. These lectures were aimed at introducing undergraduate, graduate and postgraduate researchers to machine learning (ML) methods. If you have wanted to explore the possibilities of ML in your research and would like to start somewhere, I would like to recommend these lectures specially prepared for this. The first lecture discusses the basics of ML, the second and third lectures are hands-on Python tutorials to code neural networks using PyTorch, and the fourth lecture discusses three novel use cases of ML in climate science: data-driven physical parameterizations, equation discovery, and weather forecasting. 
+								<li>
+									(Jul 2023) In June 2023, I delivered a set of four lectures on <b>"Machine Learning Methods in Atmosphere, Ocean, and Climate Science"</b> at an <a href="https://www.icts.res.in/discussion-meeting/COAPS" target="_blank">atmosphere, ocean, and climate science workshop</a> organised at the <a href="https://www.icts.res.in/" target="_blank">International Centre for Theoretical Science, TIFR, Bengaluru</a>. These lectures were aimed at introducing undergraduate, graduate and postgraduate researchers to machine learning (ML) methods. If you have wanted to explore the possibilities of ML in your research and would like to start somewhere, I would like to recommend these lectures specially prepared for this. The first lecture discusses the basics of ML, the second and third lectures are hands-on Python tutorials to code neural networks using PyTorch, and the fourth lecture discusses three novel use cases of ML in climate science: data-driven physical parameterizations, equation discovery, and weather forecasting. 
 								<br /><br />
 										    
 								<a href="https://www.youtube.com/watch?v=OZsWceHOE-A" target="_blank"><b>[Lecture 1]:</b> Machine Learning Fundamentals</a><br />
@@ -188,7 +195,8 @@
 								</li>
 								<br />
 
-								<li> Humanity has a plastic problem. Conventional plastic manufacturing is still cheaper, but the greener alternatives, bioplastics in particular, are catching up fast. <a href="https://www.youtube.com/watch?v=6MhPY4UAm7w" target="_blank"><b>Here's a video </b></a> that highlights some really innovative initiatives to manufacture bioplastics from Avocados, Sugarcanes, Mushrooms, and even Algae! Interestingly, the Sugarcane based bioplastic company featured in the video is based quite close to my hometown of Ghaziabad, India.</li>
+								<li> 
+									(Jan 2023) Humanity has a plastic problem. Conventional plastic manufacturing is still cheaper, but the greener alternatives, bioplastics in particular, are catching up fast. <a href="https://www.youtube.com/watch?v=6MhPY4UAm7w" target="_blank"><b>Here's a video </b></a> that highlights some really innovative initiatives to manufacture bioplastics from Avocados, Sugarcanes, Mushrooms, and even Algae! Interestingly, the Sugarcane based bioplastic company featured in the video is based quite close to my hometown of Ghaziabad, India.</li>
 								<br />
 								
 								<li><a href="ncar_plev_interp.html" target="_blank">NCAR Command Language (NCL) pressure interpolation script.</a> Update : NCL is being <a href="https://www.ncl.ucar.edu/Document/Pivot_to_Python/NCL_Pivot_to_Python_Report_and_Roadmap.pdf" target="_blank">pivoted in favor of Python!</a></li>
