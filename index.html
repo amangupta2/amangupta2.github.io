@@ -103,26 +103,25 @@
 							<article class="col-6 col-12-xsmall work-item">
 								<a href="images/mausam.png" class="image fit thumb"><img src="images/mausam.png" alt="" /></a>
 								<h3>MAUSAM: AI Weather Prediction Benchmarking Against Observations for the South Asian Monsoon.</h3> 
-								<p>Training and finetuning AI weather models on reanalysis carries over the systematic model and assimilation biases in reanalysis to these models. With MAUSAM, we present a systematic evaluation of seven state-of-the-art AI weather models and test their surface winds and temperature, EKE spectrum, cloud cover, cyclone trajectories, and S2S statistics against observations to highlight their strengths and expose their shortcomings for operational weather forecasting, monsoon precipitation prediction, and S2S forecasting.</p>
-								<p><a href="https://arxiv.org/abs/2509.01879" target="_blank">[pre-print]</a> <a href="talks/mausam_talk_iitb_dec2025.pdf" target="_blank">[slides]</a></p>
+								<p>We evaluate seven leading AI weather models (FourCastNet, Pangu-Weather, GraphCast, Aurora, AIFS, GenCast, and more) against ground stations, rain gauges, and geostationary satellites during the South Asian Monsoon, rather than against reanalysis. The models are impressively skillful at large scales, but errors against real observations run 15–45% larger than reanalysis-based scores suggest, with clear gaps in extreme rainfall, cyclone tracks, and the mesoscale energy spectrum, exposing their shortcomings for operational weather forecasting, monsoon precipitation prediction, and S2S forecasting.</p>
+								<p><a href="https://doi.org/10.1029/2025MS005568" target="_blank">[pre-print]</a> <a href="talks/mausam_talk_iitb_dec2025.pdf" target="_blank">[slides]</a></p>
 							</article>
 							<article class="col-6 col-12-xsmall work-item">
 								<a href="images/finetuning_prithvi.png" class="image fit thumb"><img src="images/finetuning_prithvi.png " alt="" /></a>
 								<h3>Finetuning AI Foundation Models to Develop Climate Model Parameterizations.</h3> 
-								<p>Using atmospheric gravity waves as a test case, we demonstrate that AI Foundation Models (like Prithvi WxC and Aurora) can be finetuned and repurposed to develop data-driven climate model parameterizations for physical processes which were not seen during pre-training. The schemes developed this way beat existing data-driven benchmarks.</p>
+								<p>Using gravity waves as a test case, we show that foundation models like Prithvi WxC and Aurora can be finetuned to emulate a subgrid process they never saw during pretraining. The resulting parameterization beats purpose-built data-driven baselines while being cheaper to train and more generalizable, opening a path to reusing one foundation model for many missing processes in climate models.</p>
 								<p><a href="https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2025MS005075" target="_blank">[paper]</a></p>
 							</article>
 							<article class="col-6 col-12-xsmall work-item">
 								<a href="images/nonlocal_gw_scheme_offline.png" class="image fit thumb"><img src="images/nonlocal_gw_scheme_offline.png" alt="" /></a>
 								<h3>Nonlocal Deep Learning Parameterization for Atmospheric Gravity Waves.</h3> 
-								<p>We develop a hierarchy of data-driven parameterizations for atmospheric gravity waves to represent their nonlocal propagation effects. The most nonlocal deep learning model offers the best performance on both instantaneous predictions and seasonal averages. This highlights the importance of embedding physical nonlocality when developing data-driven subgrid parameterization of mesoscale atmospheric processes.</p>
+								<p>We build a hierarchy of deep learning gravity wave parameterizations, from strictly single-column networks to models that see progressively wider neighborhoods. The most nonlocal architecture wins on both instantaneous predictions and seasonal averages, showing that data-driven schemes work best when they are allowed to encode horizontal wave propagation instead of the columnar assumption of traditional schemes.</p>
 								<p><a href="https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2025MS004977" target="_blank">[paper]</a> <a href="talks/nonlocal_gw_param_baco2025.pdf" target="_blank">[slides]</a></p>
 							</article>
 							<article class="col-6 col-12-xsmall work-item">
 								<a href="images/prithvi.png" class="image fit thumb"><img src="images/prithvi.png" alt="" /></a>
 								<h3>Prithvi WxC: A Foundation Model for Weather and Climate Applications.</h3> 
-								<p>In a joint collaboration with NASA and IBM Research, we develop Prithvi WxC, a foundation model for weather and climate applications including medium-range weather forecasting, ML downscaling, hurricane track and intensity prediction, weather analog identification, and emulation of sub-grid physical processes such as gravity-wave momentum fluxes.</p>
-								<p><a href="https://arxiv.org/abs/2409.13598" target="_blank">[paper]</a>
+								<p>With NASA and IBM Research, we developed Prithvi WxC, an open 2.3-billion-parameter foundation model trained on MERRA-2 that adapts to many downstream tasks: forecasting, downscaling, hurricane track and intensity prediction, weather analog search, and emulating subgrid physics. Our gravity wave finetuning was among its first demonstrations that a general atmospheric model can be repurposed to improve climate model physics.<br /><a href="https://arxiv.org/abs/2409.13598" target="_blank">[paper]</a>
 							</article>
 							<article class="col-6 col-12-xsmall work-item">
 								<a href="images/ml_era5_unet.jpg" class="image fit thumb"><img src="images/icml_schematic.gif" alt="" /></a>
@@ -133,8 +132,7 @@
 							<article class="col-6 col-12-xsmall work-item">
 								<a href="images/model_hierarchy.jpg" class="image fit thumb"><img src="images/model_hierarchy.jpg" alt="" /></a>
 								<h3>Where does ML fit in the existing climate model hierarchy?</h3>
-								<p> The last decade has seen a meteoric rise in the application of machine learning principles in climate science. This paper reviews how ML/AI has transformed multiple aspects of climate modeling, and discusses future avenues for climate model development to encompass climate risk evaluation. We reason why ML adds an independent dimension to the existing climate model hierarchy.</p>
-								<p><a href="https://doi.org/10.1029/2023MS003715" target="_blank">[paper]</a></p>
+								<p> This review argues that machine learning does not fit into the traditional model hierarchy as a new rung, but rather adds an independent axis, spanning data-driven parameterizations, emulators, equation discovery, and end-to-end forecasting. We survey how ML is reshaping climate modeling and where it can contribute next, including climate risk assessment.<br /><a href="https://doi.org/10.1029/2023MS003715" target="_blank">[paper]</a></p>
 							</article>
 						</div>
 						<br />
@@ -144,25 +142,23 @@
 							<article class="col-6 col-12-xsmall work-item">
 								<a href="images/scidata_fluxes.jpg" class="image fit thumb"><img src="images/scidata_fluxes.jpg" alt="" /></a>
 								<h3>A computationally tractable method to compute small-scale momentum fluxes using Helmholtz decomposition.</h3> 
-								<p>Using existing Python spherical harmonics packages out-of-the-box one can compute small-scale momentum fluxes from a kilometer-scale global climate model, using Helmholtz, in around 600 calendar days (on a typical supercomputer with limited node allocation). We optimized the workflow and reduced it to just 15! The fluxes are now publicly available for anyone to use.</p>
+								<p>Using existing Python spherical harmonics packages out-of-the-box to compute small-scale momentum fluxes from a kilometer-scale global climate model, using Helmholtz decomposition, takes roughly 600 calendar days (on a typical supercomputer with limited node allocation). We optimized the workflow and reduced it to just 15! The fluxes are now publicly available for anyone to use.</p>
 								<p><a href="https://doi.org/10.1038/s41597-024-03699-x" target="_blank">[paper]</a> <a href="https://osf.io/gx32s/" target="_blank">[dataset]</a></p>
 							</article>
 							<article class="col-6 col-12-xsmall work-item">
 								<a href="images/UW_NH.gif" class="image fit thumb"><img src="images/UW_NH.gif" alt="" /></a>
 								<h3>Does horizontal propagation of gravity waves matter for midltitude stratospheric circulation? Yes, here's a quantitative evaluation.</h3>
-								<p>The reason for horizontal propagation of mesoscale atmospheric waves is well-known, but its true impact on long timescales has not been well-quantified. This study quantifies the contribution of horizontal propagation (due to wave refraction, Doppler shifting etc.) on the midlatitude stratospheric circulation.</p>
-								<p><a href="https://doi.org/10.1029/2024GL108541" target="_blank">[paper]</a> <a href="talks/latprop_seminar_dlr_may2024.pdf" target="_blank">[slides]</a></p>
+								<p>Using 44 years of ERA5, we built the first climatology of lateral gravity wave momentum fluxes in the extratropical stratosphere and quantified their contribution to the zonal wind forcing. The horizontal component is not negligible, so parameterizations that assume purely vertical propagation systematically misplace where and how strongly waves force the circulation.<br /><a href="https://doi.org/10.1029/2024GL108541" target="_blank">[paper]</a> <a href="talks/latprop_seminar_dlr_may2024.pdf" target="_blank">[slides]</a></p>
 							</article>
 							<article class="col-6 col-12-xsmall work-item">
 								<a href="images/lidar_era5_ifs.jpg" class="image fit thumb"><img src="images/IFS1km_August2019_animation.gif" scale="40%" alt="" /></a>
 								<h3>Estimating gravity wave momentum fluxes in the Southern Hemisphere</h3>
-								<p>by blending LIDAR observations, renanalysis, kilometer-scale global models, and coarse climate models</p>
-								<p> <a href="https://doi.org/10.1175/JAS-D-23-0095.1" target="_blank">[paper]</a> <a href="talks/gwflux_sparcGA_oct2022_poster.pdf" target="_blank">[poster]</a> <a href="https://mesreflexions2.wordpress.com/2024/09/18/gravity-waves-in-a-1-km-global-hydrostatic-experimental-model-run/" target="_blank">[blog]</a></p>
+								<p>We blended Rayleigh lidar observations, ERA5, an unprecedented 1.4 km global ECMWF IFS run, and a coarse chemistry-climate model for a strong Andean wave event in August 2019. The kilometer-scale model resolves fluxes 2–2.5 times stronger than ERA5 yet still underestimates the waves seen by lidar, while parameterized fluxes are excessive poleward of 60°S, giving concrete benchmarks for the next generation of gravity wave schemes.<br /><a href="https://doi.org/10.1175/JAS-D-23-0095.1" target="_blank">[paper]</a> <a href="talks/gwflux_sparcGA_oct2022_poster.pdf" target="_blank">[poster]</a> <a href="https://mesreflexions2.wordpress.com/2024/09/18/gravity-waves-in-a-1-km-global-hydrostatic-experimental-model-run/" target="_blank">[blog]</a></p>
 							</article>
 							<article class="col-6 col-12-xsmall work-item">
 								<a href="images/gw_drakepassage.jpg" class="image fit thumb"><img src="images/gw_drakepassage.jpg" alt="" /></a>
 								<h3>Importance of gravity waves for springtime stratospheric circulation</h3>
-								<p><a href="https://doi.org/10.1029/2021GL092762" target="_blank">[paper]</a> <a href="talks/gw_seminar_lmu_mar2021.pdf" target="_blank">[slides]</a></p>
+								<p>Leveraging ERA5's ability to resolve a broad gravity wave spectrum, we quantified the momentum forcing these waves exert during the springtime Antarctic vortex breakdown. Gravity waves supply a large share of the deceleration needed to slow the vortex, pointing to inadequate gravity wave forcing as a root of the persistent "cold-pole" bias in climate models.<br /><a href="https://doi.org/10.1029/2021GL092762" target="_blank">[paper]</a> <a href="talks/gw_seminar_lmu_mar2021.pdf" target="_blank">[slides]</a></p>
 							</article>
 						</div>
 						<br />
@@ -172,22 +168,22 @@
 							<article class="col-6 col-12-xsmall work-item">
 								<a href="images/tropics_nomixing.jpg" class="image fit thumb"><img src="images/tropics_nomixing.jpg" alt="" /></a>
 								<h3>Deep tropics isolated from wave mixing</h3>
-								<p><a href="https://doi.org/10.1029/2022JD037712" target="_blank">[paper]</a></p>
+								<p>We introduce a Γ–θ streamfunction in age–potential temperature that reveals the full distribution of age-of-air for parcels exchanged across any latitude and isentrope. It shows that existing theory, which assumes perfectly mixed tropical and extratropical reservoirs, underestimates wave-driven mixing fluxes by up to 50% in the lower and middle stratosphere.<br /><a href="https://doi.org/10.1029/2022JD037712" target="_blank">[paper]</a></p>
 							</article>
 							<article class="col-6 col-12-xsmall work-item">
 								<a href="images/tracer_dispersion_sw_regime.jpg" class="image fit thumb"><img src="images/tracer_dispersion_sw_regime.jpg" alt="" /></a>
 								<h3>Wave-enhanced Tracer Dispersion</h3>
-								<p><a href="https://doi.org/10.1029/2022JD037712" target="_blank">[paper]</a></p>
+								<p>Internal gravity waves are usually considered poor at stirring ocean tracers, but in idealized barotropic simulations we compare tracer dispersion in wave-dominated versus quasi-geostrophic turbulent regimes. Wave-dominated flows stir and mix tracers far more rapidly, because waves modify the balanced flow and generate energetic small-scale structures that boost turbulent diffusivity, revealing an indirect but potent role for waves in ocean mixing.<br /><a href="https://doi.org/10.1029/2020JC017005" target="_blank">[paper]</a></p>
 							</article>							
 							<article class="col-6 col-12-xsmall work-item">
 								<a href="images/bdc_schematic.jpg" class="image fit thumb"><img src="images/bdc_schematic.jpg" alt="" /></a>
 								<h3>Understanding trace gas transport differences among climate models</h3>
-								<p><a href="https://doi.org/10.1175/JAS-D-21-0085.1" target="_blank">[paper]</a> <a href="talks/transport_talk_lmu_may2020.pdf" target="_blank">[slides]</a></p>
+								<p>In this work, we fit a one-dimensional tropical leaky-pipe model to each dynamical core to separate the roles of the overturning circulation, isentropic mixing, and numerical diffusion in the intermodel spread of age-of-air. The spread traces mainly to persistent differences in tropical circulation and mixing that do not vanish at high resolution, so model numerics leave a lasting fingerprint on ozone-relevant transport.<br /><a href="https://doi.org/10.1175/JAS-D-21-0085.1" target="_blank">[paper]</a> <a href="talks/transport_talk_lmu_may2020.pdf" target="_blank">[slides]</a></p>
 							</article>
 							<article class="col-6 col-12-xsmall work-item">
 								<a href="images/age_benchmark.jpg" class="image fit thumb"><img src="images/age_benchmark.jpg" alt="" /></a>
 								<h3>How robust is trace gas transport representation in state-of-the-art climate models?</h3>
-								<p><a href="https://doi.org/10.1002/qj.3881" target="_blank">[paper]</a> <a href="talks/transport_talk_ncar_acom_sept2022.pdf" target="_blank">[slides]</a></p>
+								<p>We proposed a climate model intercomparison test built on the age-of-air tracer to isolate transport by a dynamical core from chemistry and physics, and applied it to four cores with different numerics and grids. The cores disagreed sharply on tropical stratospheric winds, some producing westerly jets and others easterly, biasing age-of-air by up to 25% and showing that numerics alone can drive substantial transport spread.<br /><a href="https://doi.org/10.1002/qj.3881" target="_blank">[paper]</a> <a href="talks/transport_talk_ncar_acom_sept2022.pdf" target="_blank">[slides]</a></p>
 							</article>
 						</div>
 						
